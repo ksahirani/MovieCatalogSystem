@@ -21,7 +21,7 @@ export default function AddMovieModal({ show, handleClose, fetchMovies }) {
     e.preventDefault();
     setIsLoading(true);
 
-    fetch('http://localhost:4000/movies/addMovie', {
+    fetch('https://movieapp-api-lms1.onrender.com/movies/addMovie', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

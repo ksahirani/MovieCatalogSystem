@@ -13,7 +13,7 @@ export default function AdminView({ movies, fetchMovies }) {
 
   const deleteMovie = (movieId) => {
     if (window.confirm('Are you sure you want to delete this movie?')) {
-      fetch(`http://localhost:4000/movies/deleteMovie/${movieId}`, {
+      fetch(`https://movieapp-api-lms1.onrender.com/movies/deleteMovie/${movieId}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`

@@ -16,7 +16,7 @@ export default function Login() {
     e.preventDefault();
     setIsLoading(true);
 
-    fetch('http://localhost:4000/users/login', {
+    fetch('https://movieapp-api-lms1.onrender.com/users/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

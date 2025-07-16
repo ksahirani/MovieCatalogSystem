@@ -25,7 +25,7 @@ export default function MovieDetails() {
     setIsLoading(true);
     setError(null);
 
-    fetch(`http://localhost:4000/users/movies/getMovie/${id}`)
+    fetch(`https://movieapp-api-lms1.onrender.com/movies/getMovie/${id}`)
       .then(res => res.json())
       .then(data => {
         if (data._id) {
@@ -33,7 +33,7 @@ export default function MovieDetails() {
           if (user.id) {
             const token = localStorage.getItem('token');
             if (token) {
-              fetch(`http://localhost:4000/users/movies/getComments/${id}`, {
+              fetch(`https://movieapp-api-lms1.onrender.com/users/movies/getComments/${id}`, {
                 headers: {
                   'Authorization': `Bearer ${token}`
                 }
@@ -66,7 +66,7 @@ export default function MovieDetails() {
       return;
     }
 
-    fetch(`http://localhost:4000/users/movies/addComment/${id}`, {
+    fetch(`https://movieapp-api-lms1.onrender.com/users/movies/addComment/${id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -94,7 +94,7 @@ export default function MovieDetails() {
         return;
       }
 
-      fetch(`http://localhost:4000/users/movies/deleteComment/${id}/${commentId}`, {
+      fetch(`https://movieapp-api-lms1.onrender.com/users/movies/deleteComment/${id}/${commentId}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${token}`

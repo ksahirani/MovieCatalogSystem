@@ -24,7 +24,7 @@ function App() {
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (token) {
-      fetch('http://localhost:4000/users/profile', {
+      fetch('https://movieapp-api-lms1.onrender.com/users/profile', {
         headers: {
           'Authorization': `Bearer ${token}`
         }

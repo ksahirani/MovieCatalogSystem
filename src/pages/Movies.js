@@ -13,7 +13,7 @@ export default function Movies() {
 
   const fetchMovies = () => {
     setIsLoading(true);
-    fetch('http://localhost:4000/movies/getMovies')
+    fetch('https://movieapp-api-lms1.onrender.com/movies/getMovies')
       .then(res => res.json())
       .then(data => {
         setMovies(data);

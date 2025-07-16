@@ -19,7 +19,7 @@ export default function EditCommentModal({ show, handleClose, comment, movieId, 
 
     setIsLoading(true);
 
-    fetch(`http://localhost:4000/movies/updateComment/${movieId}/${comment._id}`, {
+    fetch(`https://movieapp-api-lms1.onrender.com/movies/updateComment/${movieId}/${comment._id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',

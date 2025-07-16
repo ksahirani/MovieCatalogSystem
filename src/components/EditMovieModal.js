@@ -33,7 +33,7 @@ export default function EditMovieModal({ show, handleClose, movie, fetchMovies }
     e.preventDefault();
     setIsLoading(true);
 
-    fetch(`http://localhost:4000/movies/updateMovie/${movie._id}`, {
+    fetch(`https://movieapp-api-lms1.onrender.com/updateMovie/${movie._id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
