@@ -66,7 +66,7 @@ export default function Register() {
                 </Form.Text>
               </Form.Group>
               <Button 
-                variant="primary" 
+                variant="success" 
                 type="submit" 
                 disabled={isLoading}
                 className="w-100"

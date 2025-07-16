@@ -1,5 +1,5 @@
 {
-    "url": "",
+    "url": "movie-catalog-system-sq223d8iu.vercel.app",
     "endpoints": {
         "register": "/register",
         "login": "/login",

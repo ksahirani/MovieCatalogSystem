@@ -13,15 +13,15 @@ export default function Home() {
         Browse our collection of movies and share your thoughts
       </p>
       {user.id ? (
-        <Button as={Link} to="/movies" variant="primary" size="lg">
+        <Button as={Link} to="/movies" variant="success" size="lg">
           Browse Movies
         </Button>
       ) : (
         <div>
-          <Button as={Link} to="/login" variant="primary" size="lg" className="me-3">
+          <Button as={Link} to="/login" variant="success" size="lg" className="me-3">
             Login
           </Button>
-          <Button as={Link} to="/register" variant="secondary" size="lg">
+          <Button as={Link} to="/register" variant="danger" size="lg">
             Register
           </Button>
         </div>

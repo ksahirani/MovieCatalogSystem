@@ -7,7 +7,7 @@ export default function AppNavbar() {
   const { user } = useContext(UserContext);
 
   return (
-    <Navbar bg="dark" variant="dark" expand="lg">
+    <Navbar bg="warning" variant="warning" expand="lg">
       <Container>
         <Navbar.Brand as={Link} to="/">Movie Catalog</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
